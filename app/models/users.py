@@ -1,5 +1,4 @@
-from collections import UserString, defaultdict
-from sqlalchemy import Boolean, String, true
+from sqlalchemy import Boolean, String
 from sqlalchemy.orm import Mapped, mapped_column
 from app.core.base_class import Base
 
