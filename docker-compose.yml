@@ -1,6 +1,6 @@
 services:
   db:
-    image: pgvector/pgvector:pg18
+    image: pgvector/pgvector:pg16
     container_name: nexus_db
     ports:
       - "5432:5432"
@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: admin1234
       POSTGRES_DB: nexus_db
     volumes:
-      - postgress_data:/var/lib/postgresql
+      - postgress_data:/var/lib/postgresql/data
 
   redis:
     image: redis:alpine
